@@ -49,7 +49,7 @@ console.log(
 
 // check player's health
 if (playerHealth <= 0) {
-  window.alert(playerName + " has died!");
+  window.alert("You have lost your robot in battle! Game Over!");
   break;
 } else {
   window.alert(playerName + " still has " + playerHealth + " health left.");
@@ -88,4 +88,8 @@ for(var i = 0; i < enemyNames.length; i++) {
         // pass the pickedEnemyName variable's value into the fight function, where it will assume the value of the enemyName parameter
         fight(pickedEnemyName);
     }
+    else {
+        window.alert("You have lost your robot in battle! Game Over!");
+        break;
+      }
   }
